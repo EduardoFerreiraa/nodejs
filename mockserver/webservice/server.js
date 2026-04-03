@@ -25,6 +25,9 @@ const hostname = 'localhost';
 const port = 3001;
 
 const server = createServer((req, res) => {
+    // CORS
+    res.setHeader("Access-Control-Allow-Origin", "*")
+    
     // Cabeçalhos da resposta
     res.setHeader("Content-Type" ,  "application/json")
 
